@@ -1,0 +1,103 @@
+
+/*NAVBAR*/
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.img-circle {
+  height: 200px;
+  width: 200px;
+}
+
+.feature1 {
+  margin-left: 100px;
+}
+
+.carousel {
+  margin-bottom: 10px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-caption {
+  z-index: 1;
+  text-align: center;
+}
+
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+  text-align: center;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 300px;
+}
+
+
+.pizza-style, .customize {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pizza-style .col-lg-4, .customize .col-md-6 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pizza-style h2 {
+  font-weight: normal;
+}
+.pizza-style .col-lg-4 p, .customize .col-md-6 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-heading {
+  margin-left: 100px;
+}
+
+.lead {
+  margin-left: 100px;
+}
+
+.customize {
+  padding: 100px;
+}
+.customize h4 {
+  margin: 20px 0px 20px 0px;
+}
+
+/* RESPONSIVE CSS */
+@media (min-width: 768px) {
+
+  .pizza-style
+ {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px;
+  }
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}

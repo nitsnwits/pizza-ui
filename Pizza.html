@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Build Your Pizza</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="js/pizza.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+	</head>
+	<body>
+<!-- Bootstrap carousel template: --> 
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">CMPE 280</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="./Home.html">Home</a></li>
+                <li class="active"><a href="#customize">Customize Pizza</a></li>
+                <li><a href="./Display.html">Your Dashboard</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>    
+<!-- Bootstrap carousel finish -->
+
+    <!-- Body -->
+    <div class="container customize">
+        <h4>Great job! Now, be an artist and paint your pizza!</h4>
+        <!-- Three columns of text below the carousel -->
+        <div class="row" id="pizza-charts">
+          <div class="col-md-6 text-center">
+            <div id="pie"></div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="donut"></div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-md-3 text-center"></div>
+          <div class="col-md-6">
+            <div id="veggies"  style="text-align: left;">
+              <div>
+                <table style="width:100%">
+                <div>
+                  <tr>
+                    <td><label>Tomato: </label></td>
+                    <td><input id="tomato" type="text" class="span2" value="" data-slider-handle="triangle" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="show"></td>
+                  </tr>
+                </div>
+                <div>
+                  <tr>
+                  <td><label>Olives: </label></td>
+                  <td><input id="olive" type="text" class="span2" value="" data-slider-handle="triangle" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="show"></td>
+                  <tr>
+                </div>
+                <div>
+                  <tr>
+                  <td><label>Bell Pepper: </label></td>
+                  <td><input id="pepper" type="text" class="span2" value="" data-slider-handle="triangle" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="show"></td>
+                  </tr>
+                </div>
+                <div>
+                  <tr>
+                  <td><label>Onions: </label></td>
+                  <td><input id="onion" type="text" class="span2" value="" data-slider-handle="triangle" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="show"></td>
+                  </tr>
+                </div>
+                <div>
+                  <tr>
+                  <td><label>Mushrooms: </label></td>
+                  <td><input id="mushroom" type="text" class="span2" value="" data-slider-handle="triangle" data-slider-min="0" data-slider-max="50" data-slider-step="2" data-slider-value="0" data-slider-selection="after" data-slider-tooltip="show"></td>
+                  </tr>
+                </div>
+              </table>
+              </div>                                 
+              </div>
+            </div>
+            <div class="col-md-3 text-center"></div>
+        </div><!-- /.row -->
+
+        <div class="row">
+        <div class="col-md-10 text-center">
+          <p><button class="btn btn-default" id="show-button">Show me now!</button></p>
+        </div>
+        </div>        
+    
+      <hr class="featurette-divider">
+
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p style="margin-left: 20px">&copy; 2015 BuildYourOwnPizza, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>   
+    </div> 
+	</body>
+</html>
